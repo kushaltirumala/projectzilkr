@@ -1,62 +1,37 @@
 <!DOCTYPE html>
-<html>
-   <head>
-    <meta charset="utf-8" />
-    <meta name="author" content="Script Tutorials" />
-    <title>Responsive website using AngularJS | Script Tutorials</title>
-    <meta name="description" content="Responsive website using AngularJS - demo page">
-
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-
-    <!-- add styles -->
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-
-    <!-- add javascripts -->
-    <script src="js/jquery-2.0.3.min.js"></script>
-    <script src="js/angular.min.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/controllers.js"></script>
-</head>
-<body>
-<header>
-    <div class="wrap">
-        <!-- logo -->
-        <a href="#!"><img class="logo" src="images/logo.png" /></a>
-
-        <!-- navigation menu -->
-        <nav>
-            <ul>
-                <li><a id="workBtn" href="#!/" ng-class="{activeSmall:part == 'projects'}" >Our Projects</a></li>
-                <li><a id="privacyBtn" href="#!/privacy" ng-class="{activeSmall:part == 'privacy'}">Privacy & Terms</a></li>
-                <li><a id="aboutBtn" href="#!/about" ng-class="{activeSmall:part == 'about'}">About</a></li>
-                <li style="margin-right:0px"><a id="contactBtn" class="active" href="javascript: void(0)" ng-click="showForm()">Contact Us</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-<div class="paddRow contactRow">
-    <div class="wrap">
-        <div class="head">Contact Us</div>
-        <img class="close" src="images/close.png" ng-click="closeForm()" />
-        <form ng-submit="save()" class="contactForm" name="form" ng-hide="loaded">
-            <input class="input" required="required" type="text" name="name" placeholder="your name" ng-model="message.name" />
-            <input class="input email" required="required" type="email" name="email" value="" placeholder="your email" ng-model="message.email" /><br />
-            <textarea class="textarea" rows="5" required="required" placeholder="your message" ng-model="message.text" ></textarea>
-            <button class="btn green">send message</button>
-        </form>
-
-        <!-- contact us form response messages -->
-        <div ng-show="process" style="text-align:center">
-            <img class="loader" src="images/loader.png" />
+<html lang="en" class="no-js">
+	<head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Project Zilkr | 2015</title>
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800|Londrina+Outline' rel='stylesheet' type='text/css'>
+        <!--[if IE]>
+        	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+	</head>
+	<body>
+		<div class="title">
+			<div class="content">
+      	<div id="large-header" class="large-header">
+					<div class = "loginbutton">
+						<h1>Hi</h1>
+					</div>
+        	<canvas id="triangle-canvas"></canvas>
+          <h1 class="main-title">Project Zilkr</h1></span></h1>
         </div>
-        <div ng-show="success"><p>Your message has been sent, thank you.</p></div>
-    </div>
-</div>
-
-<div style="position:relative">
-    <div style="width:100%" ng-view ng-animate="{enter: 'view-enter', leave: 'view-leave'}"></div>
-</div>
-
-</body>
+      </div>
+		</div>
+		<div class = "info">
+			<h1 class = "info-title">Enabling young entrepreneurs</h1>
+			<p class = "info-information">Project Zilkr will level the playing field of entrepreneurship, inspiring a new generation of socially aware, disruptive companies, organizations, and initiatives.</p>
+		</div>
+        <script src="js/TweenLite.min.js"></script>
+        <script src="js/EasePack.min.js"></script>
+        <script src="js/rAF.js"></script>
+        <script src="js/triangles.js"></script>
+	</body>
 </html>
