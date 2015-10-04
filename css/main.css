@@ -2726,4 +2726,10 @@ span.stButton_gradient,
 .about 
 {
     text-align: center;
+    background-color: white;
+    }
+.homepage
+{
+    font-size:28px;
+    
 }
