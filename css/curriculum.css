@@ -30,3 +30,9 @@
   color: black;
   font-size: 17px;
 }
+
+#buttonhidden{
+    text-align: center;
+    background: #4479BA;
+    color: #FFF;
+}
