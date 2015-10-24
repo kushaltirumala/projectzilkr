@@ -2733,3 +2733,29 @@ span.stButton_gradient,
     font-size:28px;
     
 }
+
+.curriculum{
+    font-style: normal;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: black;
+    padding-bottom: 30px;
+}
+
+.lineline {
+    color: black;
+    padding-right: 20px;
+    padding-left: 20px;
+    z-index: 1000;
+    
+    
+}
+.getstarted 
+{
+ color: black;
+ font-style: bold; 
+ font-size: 30px;
+ padding-bottom: 15px; 
+ 
+}
+
