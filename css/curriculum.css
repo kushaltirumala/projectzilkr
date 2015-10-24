@@ -1,22 +1,33 @@
+/* logo color: #00A99D */
+
+@font-face {
+	font-family: 'curriculum'; src: url(../fonts/Arciform.otf) format("opentype");
+}
+
 .curriculumimg
 {
- width: 110px;
- vertical-align: middle;
- position: relative;
- text-align: center;
- padding-top: 10px;
+ 	width: 300px;
+	vertical-align: middle;
+	position: relative;
+	text-align: center;
+	padding-top: 10px;
 }
 
 .curriculum-header
 {
+	background: #1681DC;
+	font-family: curriculum;
     text-align: center;
-    font-size: 30px;
-    color: blue;
+	color: #fff;
+    font-size: 40px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .curriculum-subheader
 
 {
+	font-family: curriculum;
     text-align: center;
     font-size: 20px;
     color: red;
@@ -24,9 +35,10 @@
 
 .content
 {
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: black;
-  font-size: 17px;
+	font-family: curriculum;	
+ 	text-align: center;
+ 	padding-top: 10px;
+ 	padding-bottom: 10px;
+ 	color: black;
+ 	font-size: 17px;
 }
