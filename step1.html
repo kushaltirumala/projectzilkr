@@ -101,56 +101,6 @@ NOTE: Be careful when assigning your roles and take into account everything you 
     
     
     <!--Submission form-->
-    <div style="padding-left: 20px"> 
-                
-                <script src="http://49video.resources.s3.amazonaws.com/uploadthingy.js" type="text/javascript" language="Javascript"></script>
-<iframe id="uploadtarget" name="uploadtarget" src="" style="width:0px;height:0px;border:0"></iframe>
-<div id='uploadarea'><p><img src=http://49video.resources.s3.amazonaws.com/loading.gif width=16 height=16>  Loading <a href=http://www.uploadthingy.com>Project Zilkr File Upload</a>... <br><br>If your upload form doesn't display within a few seconds, please check the <a href=http://www.uploadthingy.com/faq.html>FAQ</a> or contact us at hello@uploadthingy.com. We'd love to help out!</p></div>
-<script type="text/javascript" language="Javascript">
-var sitecode="cHJvamVjdHppbGtyLmNvbQ==";
-authupload();
-function getUploadForm(json) {
-showblinks=false;
-var h="";
-h+="<p style='color:gray; font-weight:bold; font-family:curriculum;'>Your name<br>";
-h+="<input type=text style='width:400px;' id='uploader_name' name='uploader_name'></p>";
-h+="<p style='color:gray; font-weight:bold;' type='password'>Secure ID <br>";
-h+="<input type=text style='width:400px;' id='uploader_contact' name='uploader_contact'></p>";
-h+="<p style='color:gray; font-weight:bold;'>Files<br>";
-h+="<input type='file' size='40' id='uploadfile0' name='file0'><br>";
-h+="</p>";
-h+="<input type='hidden' id='authcode' name='authcode' value='"+json.c+"'>";
-h+="<input type='hidden' id='uploadid' name='id' value='widget$"+json.d+"$"+json.c.substring(0,json.c.indexOf("_"))+"'>";
-h+="<input type='hidden' id='callbackurl' name='callbackurl' value='"+baseserverurl+"'>";
-h+="<input type='hidden' name='savemeta' value='yes'>";
-h+="<p><input class='widget_button' id='49widget_submitbutton' type='button' onclick='doUpload();' name='suploadvideo' value='Upload'></p>";
-return h;
-}
-function doUpload() { if (checkform()) { upload('start'); } }
-function checkform() { 
-var found=false;
-var cnt=0;
-while (document.getElementById('uploadfile'+cnt)) {
-if (document.getElementById('uploadfile'+cnt).value.length>0) {
-found=true;
-break;
-}
-cnt++;
-}
-if (!found) {
-alert('Please select at least one file to upload.');
-return false;
-}
-uploadmetadata=new Array();
-uploadmetadata['name']=document.getElementById('uploader_name').value;
-uploadmetadata['contact']=document.getElementById('uploader_contact').value;
-uploadmetadata['uploadfile0']=document.getElementById('uploadfile0').value;
-	return true;
-}
-</script>
-        </div>
-    
-    
     
     <div style="text-align: center;">
 
