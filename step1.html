@@ -19,9 +19,6 @@
 	    <script src="js/html5shiv.js"></script>
 	    <script src="js/respond.min.js"></script>
     <![endif]-->       
-    
-<!-- Start Bravenet.com Service Code --> 
-<!-- Place this code in the header of each page that you want protected -->
 
 
 </head><!--/head-->
@@ -30,7 +27,7 @@
     
     
     <!--header-->
-	<header id="header">      
+	<header>      
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 overflow">
@@ -49,24 +46,59 @@
         <div style="text-align:center;">
                   <img class="curriculumimg" src="img/logo.png">
         </div>
+        
 		</header>
     <!--Body of curriulum--> 
     
     <!--header-->
     <div class="curriculum-header">STEP 1: TEAM BUILDING</div>
     <!--initial content-->
-    <p class="content">Quick overview of the step in the curriculum.</p>
-    <!--subheader-->
-    <div class="curriculum-subheader">This is a subheader for content</div>
+    <p class="curriculum-summary">The team behind a startup is undoubtedly the most important factor. We don’t advise that you attempt this process alone, entrepreneurship is a difficult journey and you have a great advantage if you have a solid team on your side. Here we’ll show you how to build a team with complementary skills and how to ensure your goals are aligned so you can work cohesively. We’ll also give you tips on how to work well in a team by establishing norms and a company culture.</p>
+    <!--subheader 1-->
+    <div class="content-subheader">Finding like minded people.</div>
     <!--essay 1-->
-    <p class="content">Essay essay essay</p>
-    <!--Youtube videos and content-->
+    <p class="content">When building a team, you need to consider the problem you are solving because it's important that every team member is dedicated to finding the solution. Make sure that everyone's goals are aligned so that there's no miscommunications and people working at cross-purposes. A good way of doing this is to sit down together and discuss each of your values and your 'end game' - what you all hope to get out of this experience. If they are radically different, maybe you should reconsider going into business with that person.</p>
+    <!--subheader 1-->
+    <div class="content-subheader">Assigning Roles.</div>
+    <!--essay 1-->
+    <p class="content">It’s important not to overwhelm yourself with any amount of work, and distribute the workload among your team. Take into account the time everyone has available when distributing roles, as well as their interests and skills. Roles can provide structure but remember you can lean on your team for support. There’s a few roles every start-up needs.<br><br></p>
+<p class="boldcontent">Project Manager</p><p class="content">Organised people are best for this. They keep the boat sailing smoothly and  coordinate team members and activites.<br></p>
+<p class="boldcontent">Marketer</p><p class="content">Advertising and social media skills. Identifying your market and helping your bring your product to their hands<br></p>
+<p class="boldcontent">Tester</p><p class="content">Messes around on the site. Infuriates everyone by finding flaws in the product. Remember, it’s better a member of your team finds flaws than the consumer.<br></p>
+<p class="boldcontent">Visionary</p><p class="content">General idea shaper. Market fit and researcher.<br></p>
+<p class="boldcontent">Lead Developers</p><p class="content">The programmers. The use web framework, coding knowledge is essential.<br></p>
+<p class="boldcontent">Graphic Artist</p><p class="content">Colour, design, logos, icons and any images you may need come back to the artistically skilled amongst us. These people create your brand and your identity. Graphic designers can be outsourced, but it is always a plus to have someone who will work with you throughout the development of your ideas.<br><br><br>
+Don’t worry if you’re not sure where everyone fits just yet - take some time to see what each member of your team is good at and what he or she enjoys doing. Don’t ever try to fit someone into a position they’re uncomfortable with!<br><br>
+NOTE: Be careful when assigning your roles and take into account everything you may need. No team member is more important than another, you’re working together here. The best working teams don’t need a hierarchy to function. 
+</p>    
     
+    
+    <!--Youtube videos and content-->
     <div style="text-align:center">
-        <h1>Reccomended video:</h1>
-<iframe width="300" height="auto" src="https://www.youtube.com/embed/SK27TqxV4ko" frameborder="0" allowfullscreen></iframe>
+        <h1>recommended video:</h1>
+<iframe width=60% height="auto" src="https://www.youtube.com/embed/SK27TqxV4ko" frameborder="0" allowfullscreen></iframe>
     </div>
 
+     
+    <!--Your deliverable--> 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     <!--Submission form-->
     <div style="padding-left: 20px"> 
@@ -80,9 +112,9 @@ authupload();
 function getUploadForm(json) {
 showblinks=false;
 var h="";
-h+="<p style='color:gray; font-weight:bold;'>Your name<br>";
+h+="<p style='color:gray; font-weight:bold; font-family:curriculum;'>Your name<br>";
 h+="<input type=text style='width:400px;' id='uploader_name' name='uploader_name'></p>";
-h+="<p style='color:gray; font-weight:bold;' type='password'>username <br>";
+h+="<p style='color:gray; font-weight:bold;' type='password'>Secure ID <br>";
 h+="<input type=text style='width:400px;' id='uploader_contact' name='uploader_contact'></p>";
 h+="<p style='color:gray; font-weight:bold;'>Files<br>";
 h+="<input type='file' size='40' id='uploadfile0' name='file0'><br>";
@@ -116,27 +148,13 @@ uploadmetadata['uploadfile0']=document.getElementById('uploadfile0').value;
 	return true;
 }
 </script>
-                  
-                  </div>
-    
- <script type="text/javascript" language="Javascript" src="http://code.jquery.com/jquery-1.11.3.min.js">
-     </script>
-    <script>
-    $("#49widget_submitbutton")
-        .click(function(){
-        
-        $("#buttonhidden").show();
-    }
-         );
+        </div>
     
     
     
-    </script>
+    <div style="text-align: center;">
 
-    
-    
-    <!--MOXTRA--> 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+                  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 <script type="text/javascript" >
 var access_token;
@@ -233,10 +251,9 @@ console.log("Chat error code: " + event.error_code + " error message: " + event.
 Moxtra.chat(chat_options);
 }
 </script>
-</head>
 
 <body onload="getToken()">
-    <a id="startChat" class = "button" href="javascript:start_chat();" > Start a Chat! </a> 
+    <a id="startChat" class = "button" href="javascript:start_chat();" > Need help with the curriculum? Inbox a mentor! </a> 
   <!--<form>
         <input id = "emails" type = "text" value = "emails of those who you want chat with:">
     </form> -->
@@ -261,19 +278,28 @@ Moxtra.chat(chat_options);
     </script>
     
 <script type="text/javascript" src="https://www.moxtra.com/api/js/moxtra-latest.js" id="moxtrajs"></script>
-    
-    
-    
-    
- 
-    
-    
-    <form action="step2.html">
-    <div style="text-align:center; padding-bottom: 20px;">
-                
-        <button hidden="hidden" id="buttonhidden" >Next step here!</button>    
+
     </div>
+
+    <!--MOXTRA--> 
+        
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+         $("#49widget_submitbutton").click(function(){
+    $("#buttonhidden").show();
+});
+        </script>
+        
+    <form action="step2.html" hidden="hidden"
+          id="buttonhidden">
+        <button class="buttonchat"></button>
         </form>
-        
-        
+    
+    
+   
+    
+    
+</div>
+                
+            
     </body>

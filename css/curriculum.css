@@ -75,3 +75,15 @@
 	line-height: 120%;
 	letter-spacing: 150%;	
 }
+.buttonchat {
+    
+    
+    background: blue;
+    border: 2px solid white;
+    text-align: center;
+    padding-bottom: 20px;
+    vertical-align: middle;
+    
+    
+    
+}
